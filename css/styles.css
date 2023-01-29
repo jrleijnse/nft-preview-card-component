@@ -84,7 +84,6 @@ h6 {
   position: relative;
 }
 
-.hover-container::before,
 .hover-container::after {
   content: "";
   position: absolute;
@@ -99,6 +98,7 @@ h6 {
 
 .hover-container:hover:after {
   opacity: 1;
+  cursor: pointer;
 }
 
 .card-title {
@@ -193,9 +193,5 @@ h6 {
   color: hsl(0, 0%, 100%);
 }
 /* ---------- HELPER CLASSES ---------- */
-
-.hidden {
-  display: none;
-}
 
 /* ---------- HELPER CLASSES ---------- */
