@@ -1,0 +1,162 @@
+/* ---------- CSS RESET ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* ---------- CSS RESET ---------- */
+
+/* ### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+/* ### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%) */
+
+.card-container {
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-img {
+  border-radius: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.2rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 1.2rem;
+}
+
+.currency-container {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.eth-container {
+  display: flex;
+}
+
+.eth {
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
+  margin-left: 0.4rem;
+  text-transform: uppercase;
+}
+
+.duration-container {
+  display: flex;
+}
+
+.duration {
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+
+.creator-container {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 1rem;
+}
+
+.creator-img {
+  height: 1.9rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 999px;
+  margin-bottom: 0.4rem;
+}
+
+.creator-text {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 0.4rem;
+}
+
+.creator-name {
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+}
+
+.duration {
+  color: hsl(215, 51%, 70%);
+}
+
+.attribution {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.6rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
