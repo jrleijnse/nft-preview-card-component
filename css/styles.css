@@ -72,11 +72,33 @@ h6 {
   padding: 1.2rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .card-img {
   border-radius: 0.5rem;
   margin-bottom: 1.2rem;
+}
+
+.hover-container {
+  position: relative;
+}
+
+.hover-container::before,
+.hover-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: hsl(178, 100%, 50%, 20%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.hover-container:hover:after {
+  opacity: 1;
 }
 
 .card-title {
@@ -103,6 +125,7 @@ h6 {
 
 .eth-container {
   display: flex;
+  align-items: center;
 }
 
 .eth {
@@ -112,8 +135,17 @@ h6 {
   text-transform: uppercase;
 }
 
+.eth-icon {
+  height: 1rem;
+}
+
 .duration-container {
   display: flex;
+  align-items: center;
+}
+
+.duration-icon {
+  height: 1rem;
 }
 
 .duration {
@@ -160,3 +192,10 @@ h6 {
 .attribution a {
   color: hsl(0, 0%, 100%);
 }
+/* ---------- HELPER CLASSES ---------- */
+
+.hidden {
+  display: none;
+}
+
+/* ---------- HELPER CLASSES ---------- */
