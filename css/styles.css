@@ -93,19 +93,26 @@ h6 {
   top: 0;
   background: hsl(178, 100%, 50%, 20%);
   opacity: 0;
+  cursor: pointer;
   transition: all 0.3s;
 }
 
 .hover-container:hover:after {
   opacity: 1;
-  cursor: pointer;
 }
 
 .card-title {
+  display: inline-block;
   font-size: 1.2rem;
   font-weight: 600;
   color: hsl(0, 0%, 100%);
   margin-bottom: 1.2rem;
+  transition: all 0.3s;
+}
+
+.card-title:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
 
 .card-text {
@@ -178,6 +185,12 @@ h6 {
 .creator-name {
   font-weight: 300;
   color: hsl(0, 0%, 100%);
+  transition: all 0.3s;
+}
+
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 .duration {
