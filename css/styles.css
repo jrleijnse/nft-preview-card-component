@@ -101,6 +101,19 @@ h6 {
   opacity: 1;
 }
 
+.hover-container:hover .view-img {
+  opacity: 1;
+}
+
+.view-img {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
 .card-title {
   display: inline-block;
   font-size: 1.2rem;
